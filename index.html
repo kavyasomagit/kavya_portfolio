@@ -169,6 +169,11 @@
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
+                                    Developed an intelligent virtual agent integrated with Salesforce, leveraging Amazon S3 to store and retrieve knowledge articles. Connected data from S3 to Salesforce Data Cloud to enable the agent to answer user queries, raise support cases, and trigger automated flows, enhancing customer service efficiency and responsiveness.
+                                
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
                                 Integrating Einstein Copilot into Salesforce to generate concise, AI-driven summaries of student records, allowing academic
 advisors to quickly access relevant information without manually reviewing multiple records. <strong>This solution enhances
     efficiency and enables advisors to focus more on personalized student support and guidance</strong>.
@@ -225,8 +230,8 @@ advisors to quickly access relevant information without manually reviewing multi
                            
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                Used OpenAI APIs to recommend student clubs and activities, <strong>enhancing student experience</strong>.
-                            </li>
+                                Used OpenAI APIs and machine learning model to recommend clubs and activities based on individual student profiles, interests, and past engagement data student, <strong>enhancing student experience</strong>.
+                                </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
                                 Used Visual studio code, Code builder for metadata management between different environments in Salesforce.
@@ -306,6 +311,10 @@ advisors to quickly access relevant information without manually reviewing multi
                             </div>
                         </div>
                         <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Develop an NLP model that classifies customer queries submitted via a Salesforce-integrated web form into categories like Billing Issue, Technical Support, Account Update. Automatically route them to the right department using Salesforce flows.
+                            </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
                                 Improved the user registration process by building a web application using JavaScript, HTML, CSS, and the Lightning Web Components (LWC) framework, integrating it with Salesforce to enhance functionality and user experience.
@@ -475,7 +484,15 @@ advisors to quickly access relevant information without manually reviewing multi
                 <ul class="fa-ul">
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Machine Learning, Deep Learning, LLM, Lang Chain, Vector DB, Generative AI, AI Agents
+                        Machine Learning, Deep Learning(CNN, LSTM, GRU), Transformer models, Vision Transformer (ViT), LLM models, Embedding Models, Semantic Search, Sentiment Analysis, RAG pipelines, Prompt Engineering, Fine Tuning,  PEFT, LoRA, Few-shot & Zero-shot learning, Generative AI, AI Agents
+                    </li>
+                </ul>
+
+                <div class="subheading mb-0">Frameworks and Libraries</div>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-check"></i>
+                        TensorFlow, PyTorch, CUDA, Lang Chain, Tokenizers, FastMCP, Hugging Face Transformers, Langraph, Autogen
                     </li>
                 </ul>
 
@@ -508,6 +525,60 @@ advisors to quickly access relevant information without manually reviewing multi
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
             <div class="my-auto">
                 <h2 class="mb-5">Projects</h2>
+
+                <!-- Fine Tuning LLM -->
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
+                            <!-- Add the image element here -->
+                            <div class="project-image-wrapper">
+                                <img src="img/logo/FineTunning.png" alt="Project Image" class="project-image" />
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Product Price Prediction Using Quantized LLMs and QLoRA Fine-Tuning</h3>
+                                <div class="subheading mb-3">
+                                    <!-- <a target="_blank" rel="noopener noreferrer"
+                                       href="https://demo-app-umber.vercel.app/">explore UML ChatBot</a> |  -->
+                                    <a target="_blank" rel="noopener noreferrer"
+                                       href="https://github.com/kavyasomagit/finetuningLLM">Codebase</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Built a lightweight product price prediction model by fine-tuning Meta LLaMA 3.1-8B using QLoRA with 4-bit quantization, significantly reducing memory usage while maintaining high predictive performance. Developed an end-to-end evaluation pipeline to benchmark both base and fine-tuned models on real-world product description data, incorporating custom metrics such as Root Mean Squared Logarithmic Error (RMSLE) and granular error classification. Explored and compared tokenizers including LLaMA, Qwen, Gemma, and Phi to determine their effectiveness for structured data tasks like price extraction. Visualized model predictions against ground truth using color-coded scatter plots to highlight error distribution and provide insights into model generalization and accuracy.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">April 2025</span>
+                    </div>
+                </div>
+
+                <!-- BenchMarking -->
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
+                            <!-- Add the image element here -->
+                            <div class="project-image-wrapper">
+                                <img src="img/logo/BenchMarking.png" alt="Project Image" class="project-image" />
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Benchmarking LLMs for Medical SOAP Note Generation</h3>
+                                <div class="subheading mb-3">
+                                    <!-- <a target="_blank" rel="noopener noreferrer"
+                                       href="https://drive.google.com/file/d/1fZ-2upKlvDpKzXsqSfxCiBvxtD6a_R8-/view">medscribe demo video</a> |  -->
+                                       <a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/kavyasomagit/benchMarkingLLMs">Codebase</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Evaluated the performance of advanced large language models (LLMs) on clinical summarization by benchmarking their ability to generate structured SOAP (Subjective, Objective, Assessment, Plan) notes from unstructured doctor-patient conversations. Conducted few-shot prompting experiments across 50 real-world medical dialogues using models including GPT-3.5, GPT-4.0, and Claude Sonnet 3.5. Assessed outputs using key NLP metrics such as ROUGE-1/2/L, BLEU, and BERTScore to measure lexical overlap, structural coherence, and semantic similarity. Identified GPT-3.5 as the most reliable model, achieving a top BERTScore of 0.9279, indicating its strong potential for accurate clinical documentation in healthcare NLP workflows.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">May 2025</span>
+                    </div>
+                </div>
 
                 <!-- Conversational AI with RAG -->
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -571,6 +642,33 @@ advisors to quickly access relevant information without manually reviewing multi
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">May 2024</span>
+                    </div>
+                </div>
+
+                <!-- AI Agent -->
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <div class="d-flex align-items-start">
+                            <!-- Add the image element here -->
+                            <div class="project-image-wrapper">
+                                <img src="img/logo/HRAI_Agent.png" alt="Project Image" class="project-image" />
+                            </div>
+                            <div>
+                                <h3 class="mb-0">HR Leave Management Agent with Claude AI and MCP</h3>
+                                <div class="subheading mb-3">
+                                    <!-- <a target="_blank" rel="noopener noreferrer"
+                                       href="https://drive.google.com/file/d/1fZ-2upKlvDpKzXsqSfxCiBvxtD6a_R8-/view">medscribe demo video</a> |  -->
+                                       <!-- <a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/kavyasomagit/benchMarkingLLMs">Codebase</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Developed an intelligent HR leave management chatbot leveraging Gradio, OpenAI GPT models, and the Model Context Protocol (MCP) to streamline employee interactions with HR systems. The chatbot automates tasks such as checking leave balances, applying for time off, and retrieving leave history, using structured tools served dynamically via an external MCP server. This integration enables natural language interactions with HR workflows, enhancing accessibility, reducing manual queries, and improving operational efficiency in organizational leave management.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Feb 2025</span>
                     </div>
                 </div>
 
